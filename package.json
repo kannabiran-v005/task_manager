@@ -1,4 +1,8 @@
 {
+  "name": "task-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +15,7 @@
     "react-router-dom": "^7.16.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.21"
   }
 }
