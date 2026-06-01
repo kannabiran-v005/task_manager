@@ -6,13 +6,18 @@ app = Flask(__name__)
 app.secret_key = "task_manager_secret"
 CORS(
     app,
-    resources={r"/*": {"origins": "http://localhost:5173"}},
+    resources={r"/*": {"origins": "https://task-manager-amqs.vercel.app"}},
     supports_credentials=True
 )
 
 def get_db_connection():
-    return mysql.connector.connect(host="localhost", user="root", password="Kanna@2006", database="task_manager" )
-
+    return mysql.connector.connect(
+        host="sql12.freesqldatabase.com",
+        user="sql12828875",
+        password="Vnrjqt9tdy",
+        database="sql12828875",
+        port=3306
+    )
 @app.route("/")
 def home():
     return jsonify({"message": "Backend is running successfully"})
