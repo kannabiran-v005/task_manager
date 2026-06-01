@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const STAGES = ["Todo", "In Progress", "Done"];
-const BASE = "http://localhost:5000";
+const BASE = "https://task-manager-s08q.onrender.com/";
 
 function Dashboard() {
   const [tasks, setTasks] = useState([]);
