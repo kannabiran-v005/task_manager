@@ -10,7 +10,7 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      const res = await axios.post("https://task-manager-s08q.onrender.com/", {
+      const res = await axios.post("https://task-manager-s08q.onrender.com/register", {
         name,
         email,
         password,
