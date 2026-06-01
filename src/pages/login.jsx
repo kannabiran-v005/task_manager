@@ -9,7 +9,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://task-manager-s08q.onrender.com/", {
+      const res = await axios.post("https://task-manager-s08q.onrender.com/login", {
         email,
         password,
       });
